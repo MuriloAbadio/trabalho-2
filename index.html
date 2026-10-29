@@ -1,89 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | Digital Solutions</title>
-  <link rel="stylesheet" href="contato.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnEn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="tudo">
+        <h1 class="titulo-principal">
+            Transformamos suas ideias <br>
+            em aplicativos,sites e <br>
+            layouts de alto impacto
+        </h1>
+        <p class="subtitulo">
+            Desenvolvimento sob medida e design intuitivo para<br>
+            alavancar a presença digital do seu negocio
+        </p>
+        <div class="container-botao">
+            <button class="primeiro-botao">   Solicitar Orçamento </button>
 
-  <!-- CTA + FORMULÁRIO -->
-  <section class="contato" id="contato">
-    <h2>Pronto para tirar seu projeto do papel?</h2>
-
-    <form class="form" action="#contato" method="get">
-      <div class="campo">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Nome" required>
-      </div>
-
-      <div class="campo">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-      </div>
-
-      <div class="campo">
-        <label for="telefone">Telefone/WhatsApp</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="Telefone/WhatsApp">
-      </div>
-
-      <div class="campo">
-        <label for="servico">Tipo de Serviço</label>
-        <select id="servico" name="servico" required>
-          <option value="" selected disabled>Tipo de Serviço</option>
-          <option value="app">Aplicativo</option>
-          <option value="site">Site</option>
-          <option value="design">Design/Layout</option>
-          <option value="outro">Outro</option>
-        </select>
-      </div>
-
-      <div class="campo largo">
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem"></textarea>
-      </div>
-
-      <button type="submit" class="btn-enviar">Falar com um Especialista</button>
-    </form>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer class="rodape">
-    <div class="rodape-topo">
-      <ul class="contatos">
-        <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-            <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4.5 7v1.6L12 13.6l7.5-5V7L12 12z"/>
-          </svg>
-          <a href="mailto:email@digitalsolutions.com">email@digitalsolutions.com</a>
-        </li>
-        <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" fill="#fff"/>
-            <path fill="#0f1b33" d="M8 8c0 4 4 8 8 8l1-2-2.5-1-1 1c-1.5-.5-2.5-1.5-3-3l1-1L10.5 7z"/>
-          </svg>
-          <a href="https://wa.me/5500000000000">WhatsApp: wa.me/digitalsolutions</a>
-        </li>
-        <li class="redes">
-          <a href="#" aria-label="GitHub">gh</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="YouTube">yt</a>
-        </li>
-      </ul>
-
-      <nav class="links" aria-label="Navegação do rodapé">
-        <a href="index.html">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="index.html#portfolio">Portfólio</a>
-        <a href="#contato">Contato</a>
-      </nav>
+            <p class="segundo-botao"><a href="#contato">Falar com um Especialista</a></p>
+        </div>
     </div>
 
-    <p class="copy">© 2024 Digital Solutions. Todos os direitos reservados.</p>
-  </footer>
+    <img class = "cortar-altura" src="b796e353-e138-4179-bcd1-f6779cffd836.png" alt="Imagem Falsa">
+    <section class="secao-servicos" id="servicos">
+        <h2>O Que Fazemos</h2>
+        
+        <div class="cards-container">
+            <div class="card">
+                <img class="art" src="aplicativo_mobile.png" alt="Ima">
+                <h3>Aplicativos Mobile</h3>
+                <p>Desenvolvimento nativo e híbrido para iOS e Android, com foco em desempenho e experiência do usuário.</p>
+            </div>
+            
+            <div class="card">
+                <img class="abacate" src="i.png" alt="quarenta">
+                <h3>Criação de Sites</h3>
+                <p>Websites institucionais, lojas virtuais e landing pages otimizadas para SEO e conversão.</p>
+            </div>
+            
+            <div class="card">
+                <img class="ferrari" src="imagem3.jpg" alt="Ferrari">
+                <h3>Design & Layouts (UI/UX)</h3>
+                <p>Criação de protótipos, interfaces e identidade visual com foco em facilidade de uso.</p>
+            </div>
+        </div>
+    </section>
 
+    <div class="filtros">
+        <button>todos</button>
+        <button>app</button>
+        <button>site</button>
+        <button>design/layouts</button>
+    </div>
+
+    <section class="projetos" id="portfolio">
+        <h2>Nossos Projetos</h2>
+
+        <div class="projeto">
+            <img src="projeto1.svg" alt="Projeto 1">
+            <h3>Meu primeiro projeto</h3>
+            <p>Descrição do meu primeiro projeto.</p>
+        </div>
+
+        <div class="projeto">
+            <img src="projeto2.svg" alt="Projeto 2">
+            <h3>Meu segundo projeto</h3>
+            <p>Descrição do meu segundo projeto.</p>
+        </div>
+
+        <div class="projeto">
+            <img src="projeto3.svg" alt="Projeto 3">
+            <h3>Meu terceiro projeto</h3>
+            <p>Descrição do meu terceiro projeto.</p>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <div class="depoimentos-cabecalho">
+            <h2>O Que Dizem Nossos Clientes</h2>
+            <div class="depoimentos-linha"></div>
+        </div>
+
+        <div class="logos-parceiros">
+            <p class="logos-legenda">Empresas que confiam no nosso trabalho</p>
+            <div class="logos-lista">
+                <div class="logo-parceiro logo-samsung">SAMSUNG</div>
+
+                <div class="logo-parceiro logo-shopify">
+                    <i class="fa-brands fa-shopify"></i>
+                    <span>shopify</span>
+                </div>
+
+                <div class="logo-parceiro logo-mooomdro">
+                    <i class="fa-solid fa-shapes"></i>
+                    <span>mooomdro</span>
+                </div>
+
+                <div class="logo-parceiro logo-microsoft">
+                    <div class="microsoft-quadrados">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Microsoft</span>
+                </div>
+
+                <div class="logo-parceiro logo-samsung-life">
+                    <span class="selo">SAMSUNG</span> LIFE
+                </div>
+
+                <div class="logo-parceiro logo-amazon">amazon</div>
+            </div>
+        </div>
+
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div>
+                    <div class="depoimento-foto fundo-amarelo">
+                        <img
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600"
+                            alt="Cliente Satisfeito"
+                            onerror="this.src='https://placehold.co/400x400/fbbf24/333333?text=Foto+Cliente'"
+                        />
+                    </div>
+
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>A entrega superou nossas expectativas!</h3>
+                </div>
+
+                <div class="depoimento-autor">
+                    <img
+                        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150"
+                        alt="Avatar de Elena Rossi"
+                        onerror="this.src='https://placehold.co/100x100/e2e8f0/475569?text=ER'"
+                    />
+                    <div>
+                        <p class="autor-nome">Elena Rossi</p>
+                        <p class="autor-cargo">Gerente de Produto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="depoimento-card">
+                <div>
+                    <div class="depoimento-foto fundo-cinza">
+                        <img
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600"
+                            alt="Cliente Satisfeito"
+                            onerror="this.src='https://placehold.co/400x400/e2e8f0/333333?text=Foto+Cliente'"
+                        />
+                    </div>
+
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>Design incrível e funcional.</h3>
+                </div>
+
+                <div class="depoimento-autor">
+                    <img
+                        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150"
+                        alt="Avatar de Gabriel Santos"
+                        onerror="this.src='https://placehold.co/100x100/e2e8f0/475569?text=GS'"
+                    />
+                    <div>
+                        <p class="autor-nome">Gabriel Santos</p>
+                        <p class="autor-cargo">Diretor de Arte</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="depoimento-card">
+                <div>
+                    <div class="depoimento-foto fundo-verde">
+                        <img
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600"
+                            alt="Cliente Satisfeito"
+                            onerror="this.src='https://placehold.co/400x400/0d9488/ffffff?text=Foto+Cliente'"
+                        />
+                    </div>
+
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>Resultados reais para o meu negócio.</h3>
+                </div>
+
+                <div class="depoimento-autor">
+                    <img
+                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150"
+                        alt="Avatar de Sara Alves"
+                        onerror="this.src='https://placehold.co/100x100/e2e8f0/475569?text=SA'"
+                    />
+                    <div>
+                        <p class="autor-nome">Sara Alves</p>
+                        <p class="autor-cargo">Fundadora Executiva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Pronto para tirar seu projeto do papel?</h2>
+
+        <form class="form" action="#contato" method="get">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone">Telefone/WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone/WhatsApp">
+            </div>
+
+            <div class="campo">
+                <label for="servico">Tipo de Serviço</label>
+                <select id="servico" name="servico" required>
+                    <option value="" selected disabled>Tipo de Serviço</option>
+                    <option value="app">Aplicativo</option>
+                    <option value="site">Site</option>
+                    <option value="design">Design/Layout</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="campo largo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Falar com um Especialista</button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-topo">
+            <ul class="contatos">
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+                        <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4.5 7v1.6L12 13.6l7.5-5V7L12 12z"/>
+                    </svg>
+                    <a href="mailto:email@onen.com">lntech@gmail.com</a>
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" fill="#fff"/>
+                        <path fill="#0f1b33" d="M8 8c0 4 4 8 8 8l1-2-2.5-1-1 1c-1.5-.5-2.5-1.5-3-3l1-1L10.5 7z"/>
+                    </svg>
+                    <a href="https://wa.me/5500000000000">WhatsApp(34)99999-9999</a>
+                </li>
+                <li class="redes">
+                    <a href="#" aria-label="GitHub">gh</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="YouTube">yt</a>
+                </li>
+            </ul>
+
+            <nav class="links" aria-label="Navegação do rodapé">
+                <a href="#">Home</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+
+        <p class="copy">© 2026 OnEn. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
