@@ -1,0 +1,139 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", "Poppins", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============ CONTATO ============ */
+.contato {
+  flex: 1;
+  background: #0f2380;
+  padding: 80px 20px 70px;
+  text-align: center;
+}
+
+.contato h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 36px;
+}
+
+.form {
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.campo { text-align: left; }
+.campo.largo { grid-column: 1 / -1; }
+
+/* labels existem (acessibilidade), mas ficam invisíveis */
+.campo label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: #fff;
+  font-family: inherit;
+  font-size: .95rem;
+  color: #1b1b1b;
+}
+
+.campo textarea { resize: vertical; min-height: 110px; }
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #00e5e5;
+}
+
+/* Botão de envio destacado */
+.btn-enviar {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  padding: 13px;
+  border: none;
+  border-radius: 999px;
+  background: #00e5e5;
+  color: #0b1a4a;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+
+.btn-enviar:hover { background: #35f2f2; transform: translateY(-1px); }
+
+/* ============ RODAPÉ ============ */
+.rodape {
+  background: #0f1b33;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.rodape-topo {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contatos { list-style: none; display: grid; gap: 14px; }
+
+.contatos li { display: flex; align-items: center; gap: 10px; font-size: .9rem; }
+
+.contatos a, .links a { color: #fff; text-decoration: none; }
+.contatos a:hover, .links a:hover { text-decoration: underline; }
+
+.redes { gap: 10px; }
+
+.redes a {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  color: #0f1b33;
+  font-size: .65rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.links { display: grid; gap: 10px; font-size: .9rem; }
+
+.copy {
+  max-width: 640px;
+  margin: 34px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid #2a3652;
+  text-align: center;
+  font-size: .8rem;
+  color: #c3c9d6;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .form { grid-template-columns: 1fr; }
+  .contato h2 { font-size: 1.5rem; }
+}
